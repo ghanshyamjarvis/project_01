@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>User List</title>
+</head>
+<body> 
+  <table border="1">
+    <th>Id</th>
+    <th>Name</th> 
+    <th>password</th>
+    <th>Email</th>
+    <th>mobile</th>
+    <tr><% results.forEach(function(value) { %></tr>
+    <td><%= value.user_id %></td>
+    <td><%= value.full_name %></td>
+    <td><%= value.password %></td> 
+    <td><%= value.email %></td> 
+    <td><%= value.phone_number %></td> 
+    <% }); %>
+    
+  </table>
+  
+</body>
+</html>
